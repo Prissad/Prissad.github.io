@@ -1,63 +1,850 @@
 <!DOCTYPE html>
-<html>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Taieb Slama - Website</title>
-        <link rel="stylesheet" id="op-uikit-css" href="css/main.min.css" media="all">
-        <style id="style-under-construction">
-            #under-construction{
-                background-image: url("assets/background.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;       
-            }
-            #under-construction .uk-overlay-primary{
-                background: rgba(0,0,0,0.53);
-            }
-            #under-construction .uk-heading-primary{
-                font-size : px;
-                color : #f59c1f;
-            }
-            #under-construction .uk-text-lead {
-                font-size : 16px;
-                color : #f59c1f;
-            }
-            #under-construction .op-logo {
-                width: 260px;
-            }
-            @media(max-width:768px){
-                #under-construction .uk-heading-primary{
-                    font-size : 0px;
-                }
-            }
-        </style>
-        <link rel="icon" href="">
-    </head>
+<html lang="en">
 
-    <body class="page-template page-template-onepage page-template-onepage-php page page-id-302 custom-background wp-embed-responsive theme-twentytwenty txop-page-302 woocommerce-js singular enable-search-modal missing-post-thumbnail has-no-pagination not-showing-comments show-avatars onepage footer-top-visible">
-        <div class="op-sections">
-            <section id="under-construction" class="fp-section uk-section coming-soon coming-soon-2 uk-position-relative uk-height-viewport uk-padding-large">
-                <div class="uk-overlay-primary uk-position-cover"></div>
-                <div class="uk-container">
-                    <article class="uk-position-center">
-                            <!-- Logo -->
-                            <div class="logo">
-                                <img class="op-logo uk-align-center uk-text-center" src="assets/construction_sign.png" alt="logo">
-                            </div>
-                            <!-- Title -->
-                            <div class="section-heading uk-margin-large-bottom uk-text-center">	
-                                    <!-- Section Title -->
-                                    <h1 class="uk-heading-primary uk-text-0">Website Under Maintenance</h1>																
-                                    <!-- Section Sub Title -->
-                                    <p class="uk-text-lead uk-margin-remove-bottom">
-                                        My website is under maintenance, it will be back soon with cool content :)						
-                                    </p>           
-                            </div>
-                    </article> 
-                </div> 
-            </section> 
-            <!-- end-section -->
-        </div>
-    </body>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="description" content="Taieb Slama or Prissad Portfolio">
+<meta name="author" content="Prissad">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Taieb Slama - Portfolio</title>
+
+<!-- STYLES -->
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/plugins.css" />
+<link rel="stylesheet" type="text/css" href="css/dark.css" />
+<link rel="stylesheet" type="text/css" href="css/colors.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/modeswitch.css" />
+<link rel="stylesheet" type="text/css" href="css/cuphead.css" />
+<!-- /STYLES -->
+
+</head>
+
+<body class="dark"> 
+	<canvas id="canvas_cup"></canvas>
+	
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="loader_line"></div>
+	</div>
+	<!-- /PRELOADER -->
+	
+<!-- WRAPPER ALL -->
+<div class="webresume_tm_all_wrap" data-magic-cursor="" data-color="white"> <!-- If you want disable magic cursor add value "hide" -->	
+
+	<!-- MAGIC CURSOR VALUES: "", hide -->
+	<!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
+	
+	<!-- MODALBOX NEWS -->
+	<div class="webresume_tm_modalbox">
+		<div class="box_inner">
+			<div class="close">
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+			</div>
+			<div class="description_wrap"></div>
+		</div>
+	</div>
+	<!-- /MODALBOX NEWS -->
+
+	<!-- MODALBOX EDUCATION -->
+	<div class="webresume_tm_modalbox_education webresume_tm_modalbox">
+		<div class="box_inner">
+			<div class="close">
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+			</div>
+			<div class="description_wrap"></div>
+		</div>
+	</div>
+	<!-- /MODALBOX EDUCATION -->
+	
+	<!-- MODALBOX ABOUT -->
+	<div class="webresume_tm_modalbox_about">
+		<div class="box_inner">
+			<div class="close">
+				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+			</div>
+			<div class="description_wrap">
+				<div class="my_box">
+					<div class="left">
+						<div class="about_title">
+							<h3>Soft Skills</h3>
+						</div>
+						<div class="webresume_progress">
+							<div class="progress_inner" data-value="95">
+								<span><span class="label">Problem-solving</span><span class="number">95%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="90">
+								<span><span class="label">Teamwork</span><span class="number">90%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="85" >
+								<span><span class="label">Autonomy</span><span class="number">85%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="80">
+								<span><span class="label">Communication</span><span class="number">80%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="about_title">
+							<h3>Language Skills</h3>
+						</div>
+						<div class="webresume_progress">
+							<div class="progress_inner" data-value="95">
+								<span><span class="label">English</span><span class="number">95%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="95">
+								<span><span class="label">French</span><span class="number">95%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="80">
+								<span><span class="label">Arabic</span><span class="number">80%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+							<div class="progress_inner" data-value="50">
+								<span><span class="label">German</span><span class="number">50%</span></span>
+								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
+							</div>
+						</div>
+					</div>
+				</div>			
+				<div class="partners">
+					<div class="about_title">
+						<h3>What I use</h3>
+					</div>
+					<div class="about_title">
+						<h4>Languages & Frameworks:</h4>
+					</div>
+					<ul class="owl-carousel lang-framework">
+						<li class="item"><img src="img/tools/csharp.svg" alt="" /><h5>C#</h5></li>
+						<li class="item"><img src="img/tools/dotnet.svg" alt="" /><h5>.Net</h5></li>
+						<li class="item"><img src="img/tools/unity.svg" alt="" /><h5>Unity</h5></li>
+						<li class="item"><img src="img/tools/python.svg" alt="" /><h5>Python</h5></li>	
+						<li class="item"><img src="img/tools/jupyter.svg" alt="" /><h5>Jupyter</h5></li>
+						<li class="item"><img src="img/tools/selenium.svg" alt="" /><h5>Selenium</h5></li>
+						<li class="item"><img src="img/tools/flask.svg" alt="" /><h5>Flask</h5></li>
+						<li class="item"><img src="img/tools/r.svg" alt="" /><h5>R</h5></li>
+						<li class="item"><img src="img/tools/html.svg" alt="" /><h5>HTML</h5></li>
+						<li class="item"><img src="img/tools/css.svg" alt="" /><h5>CSS</h5></li>						
+						<li class="item"><img src="img/tools/javascript.svg" alt="" /><h5>JavaScript</h5></li>
+						<li class="item"><img src="img/tools/angular.svg" alt="" /><h5>Angular</h5></li>
+						<li class="item"><img src="img/tools/nestjs.svg" alt="" /><h5>NestJS</h5></li>
+						<li class="item"><img src="img/tools/reactjs.svg" alt="" /><h5>React</h5></li>
+						<li class="item"><img src="img/tools/nodejs.svg" alt="" /><h5>NodeJS</h5></li>
+						<li class="item"><img src="img/tools/cplusplus.svg" alt="" /><h5>C++</h5></li>
+						<li class="item"><img src="img/tools/java.svg" alt="" /><h5>Java</h5></li>
+						<li class="item"><img src="img/tools/php.svg" alt="" /><h5>PHP</h5></li>
+						<li class="item"><img src="img/tools/laravel.svg" alt="" /><h5>Laravel</h5></li>
+						<li class="item"><img src="img/tools/symfony.svg" alt="" /><h5>Symfony</h5></li>
+						<li class="item"><img src="img/tools/dart.svg" alt="" /><h5>Dart</h5></li>
+						<li class="item"><img src="img/tools/flutter.svg" alt="" /><h5>Flutter</h5></li>
+					</ul>
+					<br/>
+					<div class="about_title">
+						<h4>Databases:</h4>
+					</div>
+					<ul class="owl-carousel databases">
+						<li class="item"><img src="img/tools/mysql.svg" alt="" /><h5>MySQL</h5></li>
+						<li class="item"><img src="img/tools/postgresql.svg" alt="" /><h5>PostgreSQL</h5></li>
+						<li class="item"><img src="img/tools/mongodb.svg" alt="" /><h5>MongoDB</h5></li>
+						<li class="item"><img src="img/tools/oracle.svg" alt="" /><h5>Oracle</h5></li>
+					</ul>
+					<br/>
+					<div class="about_title">
+						<h4>Operations & Administration:</h4>
+					</div>
+					<ul class="owl-carousel ops">
+						<li class="item"><img src="img/tools/git.svg" alt="" /><h5>Git</h5></li>
+						<li class="item"><img src="img/tools/github.svg" alt="" /><h5>Github</h5></li>
+						<li class="item"><img src="img/tools/gitlab.svg" alt="" /><h5>GitLab</h5></li>
+						<li class="item"><img src="img/tools/jenkins.svg" alt="" /><h5>Jenkins</h5></li>
+						<li class="item"><img src="img/tools/docker.svg" alt="" /><h5>Docker</h5></li>
+						<li class="item"><img src="img/tools/kubernetes.svg" alt="" /><h5>Kubernetes</h5></li>
+						<li class="item"><img src="img/tools/ansible.svg" alt="" /><h5>Ansible</h5></li>
+						<li class="item"><img src="img/tools/linux.svg" alt="" /><h5>Linux</h5></li>
+						<li class="item"><img src="img/tools/apache.svg" alt="" /><h5>Apache</h5></li>
+						<li class="item"><img src="img/tools/nginx.svg" alt="" /><h5>Nginx</h5></li>
+					</ul>
+					<br/>
+					<div class="about_title">
+						<h4>Game & Graphic Design:</h4>
+					</div>
+					<ul class="owl-carousel game-dev">
+						<li class="item"><img src="img/tools/unity.svg" alt="" /><h5>Unity</h5></li>
+						<li class="item"><img src="img/tools/blender.svg" alt="" /><h5>Blender</h5></li>
+						<li class="item"><img src="img/tools/unrealengine.svg" alt="" /><h5>Unreal Engine</h5></li>
+						<li class="item"><img src="img/tools/krita.svg" alt="" /><h5>Krita</h5></li>
+						<li class="item"><img src="img/tools/photoshop.svg" alt="" /><h5>Photoshop</h5></li>
+						<li class="item"><img src="img/tools/godotengine.svg" alt="" /><h5>GoDot</h5></li>
+					</ul>
+					<br/>
+					<div class="about_title">
+						<h4>Other Tools:</h4>
+					</div>
+					<ul class="owl-carousel other-tools">
+						<li class="item"><img src="img/tools/jira.svg" alt="" /><h5>Jira</h5></li>
+						<li class="item"><img src="img/tools/azuredevops.svg" alt="" /><h5>Azure Boards</h5></li>
+						<li class="item"><img src="img/tools/trello.svg" alt="" /><h5>Trello</h5></li>
+						<li class="item"><img src="img/tools/talend.svg" alt="" /><h5>Talend</h5></li>
+						<li class="item"><img src="img/tools/hadoop.svg" alt="" /><h5>MapReduce</h5></li>
+						<li class="item"><img src="img/tools/matlab.svg" alt="" /><h5>Matlab</h5></li>
+						<li class="item"><img src="img/tools/rabbitmq.svg" alt="" /><h5>RabbitMQ</h5></li>
+						<li class="item"><img src="img/tools/wireshark.svg" alt="" /><h5>WireShark</h5></li>
+					</ul>
+				</div>		
+				<div class="counter">
+					<div class="about_title">
+						<h3>Interests</h3>
+					</div>
+					<ul>
+						<li>
+							<div class="list_inner">
+								<h3><span class="webresume_tm_counter" data-from="0" data-to="1" data-speed="1">1</span></h3>
+								<span class="name">Games, Puzzles & Riddles</span>
+							</div>
+						</li>
+						<li>
+							<div class="list_inner">
+								<h3><span class="webresume_tm_counter" data-from="0" data-to="2" data-speed="1">2</span></h3>
+								<span class="name">Nature & Animals</span>
+							</div>
+						</li>
+						<li>
+							<div class="list_inner">
+								<h3><span class="webresume_tm_counter" data-from="0" data-to="3" data-speed="1">3</span></h3>
+								<span class="name">General Knowledge</span>
+							</div>
+						</li>
+					</ul>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<!-- /MODALBOX ABOUT -->
+
+	<!-- MOBILE MENU -->
+	<div class="webresume_tm_mobile_menu">
+		<div class="menu_inner">
+			<div class="logo_mobile">
+				<a href="#">
+					<h2>Welcome!</h2>
+				</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#home"><img class="svg" src="img/svg/home-run.svg" alt="" /></a></li>
+					<li><a href="#about"><img class="svg" src="img/svg/avatar.svg" alt="" /></a></li>
+					<li><a href="#education"><img class="svg" src="img/svg/education.svg" alt="" /></a></li>
+					<li><a href="#work_experience"><img class="svg" src="img/svg/briefcase.svg" alt="" /></a></li>
+					<li><a href="#portfolio"><img class="svg" src="img/svg/paper.svg" alt="" /></a></li>
+					<li><a href="#contact"><img class="svg" src="img/svg/mail.svg" alt="" /></a></li>
+				</ul>
+				<div>
+					<button class="retro retro-small" onclick="OverWorldWalk()">
+						Run'n'Gun
+					</button>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- /MOBILE MENU -->
+	
+	<!-- LEFTPART -->
+	<div class="leftpart">
+		<div class="leftpart_inner">
+			<div class="logo">
+				<a href="#">
+					<h2>Welcome!</h2>
+				</a>
+			</div>
+			<div class="menu">
+				<ul>
+					<li class="active"><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#work_experience">Work Experience</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>2021 <a href="https://github.com/Prissad" target="_blank">Prissad</a>'s Website</p>
+			</div>
+			<div>
+				<button class="retro" onclick="OverWorldWalk()">
+					Run'n'Gun
+				</button>
+			</div>
+		</div>
+	</div>
+	<!-- /LEFTPART -->
+	
+	<!-- RIGHTPART -->
+	<div class="rightpart">
+		<div class="rightpart_in">
+
+			<!-- LIGHT/DARK MODE -->
+			<div id="modeswitch">
+				<label id="switch" class="switch">
+					<input type="checkbox" onchange="changeMode()" id="slider">
+					<span class="slider round"></span>
+				</label>
+			</div>
+		
+			<!-- HOME -->
+			<div id="home" class="webresume_tm_section active">
+				<div class="container">					
+					<div class="webresume_tm_home">
+						<div class="home_content">
+							<div class="avatar">
+								<div class="image" data-img-url="img/slider/1.jpg"></div>
+							</div>
+							<div class="details">
+								<h3 class="name">Taieb Slama</h3>
+								<p class="job">
+									Software Engineering, Data Science and Data Engineering Student. <br/>
+									Information Processing and Complexity of Living Systems master's Student. <br/>
+									<hr/>
+									<br/>
+									<b>
+										<h6>Currently looking for an End of Studies Internship (PFE)</h6>
+										<ul>
+											<li>Location: All around the world</li>
+											<li>Duration: 4-6 months</li>
+											<li>Start Date: February 2022</li>
+										</ul>
+									</b>
+								</p>
+								<br/>
+								<div class="social">
+									<ul>
+										<li><a href="https://www.linkedin.com/in/mohamedtaiebslama/"><img class="svg" src="img/svg/social/linkedin.svg" alt="" /></a></li>
+										<li><a href="https://www.xing.com/profile/Taieb_Slama"><img class="svg" src="img/svg/social/xing.svg" alt="" /></a></li>
+										<li><a href="https://github.com/Prissad"><img class="svg" src="img/svg/social/github.svg" alt="" /></a></li>
+										<li><a href="https://gitlab.com/Prissad"><img class="svg" src="img/svg/social/gitlab.svg"  alt="" /></a></li>
+										<li><a href="mailto:mohamedtaiebslama@gmail.com"><img class="svg" src="img/svg/social/gmail.svg"  alt="" /></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /HOME -->
+
+			<!-- ABOUT -->
+			<div id="about" class="webresume_tm_section">
+				<div class="container">
+					<div class="webresume_tm_about">
+						<div class="about_image">
+							<img src="img/thumbs/4-2.jpg" alt="" />
+							<div class="main" data-img-url="img/slider/1.jpg"></div>
+						</div>
+						<div class="description">
+							<h3 class="name">Taieb Slama</h3>
+							<div class="description_inner">
+								<div class="left">
+									<p>
+										I'm a Software Engineering Student who is extremely passionate 
+										about Game Development, Machine Learning, Data Science, 
+										Cloud Computing, DevOps, Cybersecurity 
+										and acquiring all the aspects of the new Technologies that keep appearing daily.
+									</p>
+									<div class="webresume_tm_button">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+								<div class="right">
+									<ul>
+										<li><p><span>Birthday:</span>August 1999</p></li>
+										<li><p><span>Age:</span>22</p></li>
+										<li><p><span>Email:</span><a href="mailto:mohamedtaiebslama@gmail.com">mohamedtaiebslama@gmail.com</span></a></p></li>
+										<li><p><span>Phone:</span><a href="tel:+21621218835">+216 21 21 88 35</a></p></li>
+										<li><p><span>Study:</span>
+											National Institute of Applied Science and Technology (INSAT)
+											<b>&</b> National Engineering School of Tunis (ENIT)
+										</p></li>
+										<li><p><span>Situation:</span>Looking for 4-6 months internship</p></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<!-- /ABOUT -->
+
+			<!-- Education -->
+			<div id="education" class="webresume_tm_section">
+				<div class="container">
+					<div class="webresume_tm_education">
+						<div id="content">
+							<h3>Click on a title to reveal</h3>
+							<ul class="timeline">
+							<li class="event" data-date="2017">
+								<div class="member-infos">
+								  <h1 class='member-title'>High School Diploma in Mathematics, Highest Honors</h1>
+								  <h2 class="member-location "><span class='entypo-location'></span>Pioneer High School Bayrem 5, Menzah 8</h2>
+						  						  
+								</div>						  
+							</li>
+
+							<li id='fader' class="event" 
+							data-date="Sep. 2017 - June 2019" 
+							data-title="Preparatory Cycle in Software Engineering"
+							data-img="img/education/insat1.jpg"
+							data-content-big="During these 2 years, being a preparatory cycle, I was thought a lot of Mathematics and Physics during this cycle, along with the basics of Software Development and Algorithms."
+							data-content="<h5>A more detailed course list would include:</h5> <br/>
+							<ul>
+								<li>Linear Algebra and Matrices</li>
+								<li>Analysis and Calculus</li>
+								<li>Probability and Statistics</li>
+								<li>Algorithms & Data Structures</li>
+								<li>Programming (using C, C++, Java and Python)</li>
+								<li>Object Oriented Programming (OOP)</li>
+								<li>Databases (SQL)</li>
+								<li>Software Design (UML)</li>
+								<li>Web Development (using HTML, CSS, JavaScript, PHP and Symfony)</li>
+								<li>Operating Systems</li>
+								<li>Networks, Signal Transmission and Distributed Applications</li>
+								<li>Computers Architecture</li>
+								<li>Logical Systems and Gates</li>
+								<li>etc…</li>
+							</ul>
+							<hr/>
+							<h5>Extracellular activities:</h5> <br/>
+							<ul>
+								<li>
+									<b>Member of ACM INSAT Student Chapter:</b> This is when I first discovered Competitive Programming and really became found of it as it felt like resolving puzzles, so I started using Codeforces. I also participated in a few competitions which was a very interesting experience.
+								</li>
+								<li>
+									<b>Part of the Organization Committee of Aeroday INSAT 2018:</b> One of the biggest Tunisian Aeronautics events, I was part of its organisation by being an Ambassador who promotes the event mainly on an international level. It was such a great experience to see such a huge project come alive and all the planification and efforts put into it.
+								</li>
+								<li>
+									<b>Member of AeRobotix INSAT:</b> This gave me the opportunity to learn a lot about embedded systems and electronics since my team and I entered a competition by building a remotely controlled robot that corresponds to the competition's standards and we managed to get 2nd position.
+								</li>
+							</ul>
+							"
+							>
+								<div class="member-infos">
+								  <h1 class='member-title'>Preparatory Cycle in Software Engineering</h1>
+								  <h2 class="member-location "><span class='entypo-location'></span>National Institute of Applied Science and Technology (INSAT)</h2>
+						  
+								  <div class="member-parameters">
+									<img src="img/education/insatlogopng.png" class="follow entypo-plus"></img>
+									<ul class="member-socials">
+										<li class="member-shots-number">Read More</li>
+									</ul>
+								  </div>
+
+								</div>
+							</li>
+
+							<li class="event" 
+							data-date="Sep. 2021 - Present"
+							data-title="Master's Degree: Information Processing and Complexity of Living"
+							data-img="img/education/enit.jpg"
+							data-content-big="I am attending this Master of Research and my last year of Engineering School simultaneously and both will conclude in an End of Studies Internship. This master's degree covers courses about Artificial Intelligence and Information Processing."
+							data-content="<h5>A more detailed course list would include:</h5> <br/>
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>Audio Signal Processing and Learning Algorithms</li>
+                                <li>Image Segmentation</li>
+                                <li>3D Images</li>
+                                <li>Video Analysis</li>
+                                <li>Perceptual Aspects in Spatial Audio Processing</li>
+                                <li>Random Signal Representation</li>
+                                <li>Estimation and Detection</li>
+                                <li>Complex Dynamical Systems</li>
+                                <li>Computational neuroimaging</li>
+                                <li>etc…</li>
+                            </ul>
+							"
+							>
+							  <div class="member-infos">
+								<h1 class='member-title'>Master's Degree in Information Processing and Complexity of Living</h1>
+								<h2 class="member-location "><span class='entypo-location'></span>National Engineering School of Tunis (ENIT)</h2>
+						
+								<div class="member-parameters">
+									<img src="img/education/enitlogopng.png" class="follow entypo-plus"></img>
+								  <ul class="member-socials">
+									<li class="member-shots-number">Read More</li>
+								  </ul>
+								</div>	
+
+							  </div>
+							</li>						  
+							  
+							<li class="event" 
+							data-date="Sep. 2019 - Present"
+							data-title="Software Engineering, Data Science & Data Engineering"
+							data-img="img/education/insat2.jpg"
+							data-content-big="The Engineering Cycle is when we got to focus more on how to design and build solid, working and lasting Software by working on multiple projects. During the second year of the cycle, I specialized in Data Science and Data Engineering. Combining the studies and the extracellular activities I took part in, I feel like it helped me maturing on a personal & professional level and gave me more insight on the industry."
+							data-content="<h5>A more detailed course list would include:</h5> <br/>
+                            <ul>
+                                <li>Software Architecture</li>
+                                <li>Software Design</li>
+                                <li>Software Development Lifecycle & Methodologies</li>
+                                <li>Software Quality</li>
+                                <li>Formal Languages and Compilation</li>
+                                <li>Data Science</li>
+                                <li>Data Mining</li>
+                                <li>Machine Learning</li>
+                                <li>Deep Learning</li>
+                                <li>NLP</li>
+                                <li>Business Intelligence</li>
+                                <li>Big Data & Data Engineering</li>
+                                <li>DevOps & Cloud Computing</li>
+                                <li>Automation, Orchestration and Testing</li>
+                                <li>Parallel Computing</li>
+                                <li>Distributed Systems and Networking</li>
+                                <li>Cryptography and Software Security</li>
+                                <li>etc…</li>
+                            </ul>
+                            <hr/>
+                            <h5>Extracellular activities:</h5> <br/>
+                            <ul>
+                                <li>
+                                    <b>Head of Project Department in Junior Entreprise INSAT:</b> This was one of the most interesting learning experiences I took part in as I was leading a whole department from the Junior Entreprise INSAT's association. I had many responsibilities including managing members, meeting with clients and establishing agreements, setting technical standards and tracking members accordingly to plan trainings, supervising the members work and the projects progression, ensuring the best working environment and improving communication flow, and making sure all projects are well documented to ensure continuity in all activities.
+                                </li>
+                                <li>
+                                    <b>Sponsoring Manager of Winter Cup 2020:</b> Winter Cup is an annual Competitive Programming competition organized by ACM INSAT Student Chapter. In the 2020 edition, I was responsible of sponsoring, acquiring partnerships and landing the needed deals to have all the logistic needs for the event. The logistic needs included medals and money award for winners, water and food (lunch and snacks) for all 250 participants and stuff, internet, wires and power strips, additional lighting, printing problem sets to all participants, badges, banners and flyers, balloons as they are fundamental for the event, etc…
+                                </li>
+                                <li>
+                                    <b>Volunteer at AIESEC University in Tunisia:</b> I was part of the Incoming Global Volunteer (IGV) team, which helps foreign students get to Tunisia to take part in different volunteering experiences. As such, my responsibilities included helping find volunteering positions, helping find accommodation for incoming volunteers, and contacting the applying students to help them throughout the entire process and just to get to know them. 
+                                </li>
+                                <li>
+                                    <b>Member of Data Co-Lab:</b> I had the chance to be part of the first Data Science lab for Students and Educators that aims to empower Artificial Intelligence (AI) culture in Tunisia. I learnt a lot more about AI and its subdomains by being surrounded by people who share the same enthusiasm and working on projects.
+                                </li>
+                                <li>
+                                    <b>Member of Securinets:</b> Securinets is an association that bases all its activities around Cybersecurity and Network Security by organizing training, competitions and events. I took part in multiple Capture The Flag (CTF) competitions and learnt a lot about IT Security in general.
+                                </li>
+                            </ul>
+							"
+							>
+								<div class="member-infos">
+								  <h1 class='member-title'>Software Engineering, Data Science & Data Engineering</h1>
+								  <h2 class="member-location "><span class='entypo-location'></span>National Institute of Applied Science and Technology (INSAT)</h2>
+						  
+								  <div class="member-parameters">
+									<img src="img/education/insatlogopng.png" class="follow entypo-plus"></img>
+									<ul class="member-socials">
+										<li class="member-shots-number">Read More</li>
+									</ul>
+								  </div>
+
+								</div>	
+							</li>						  
+							</ul>
+						</div>						
+					</div>
+				</div>	
+			</div>
+			<!-- /Education -->
+
+			<!-- Work Experience -->
+			<div id="work_experience" class="webresume_tm_section">
+				<div class="container">
+					<div class="webresume_tm_education">
+						<div id="content">
+							<h3>Click on a title to reveal</h3>
+							<ul class="timeline">
+							<li class="event" data-date="Sep. 2019 - July 2020">
+								<div class="member-infos">
+								  	<h1 class='member-title'>Flutter Mobile Developer</h1>
+								  	<h2 class="member-location with_logo">
+									  <img src="img/work_experience/je_insat.png" />
+									   Junior Entreprise INSAT
+									</h2>
+						  				
+								  	<div class="member-parameters">
+										<p>
+											In a few words, what I acquired from the experience:<br/>
+											I learnt about Teamwork and multiple technical skills.
+											<hr/>
+											Worked on multiple Mobile projects as a Team:
+											<ul>
+												<li><b>Used Technologies:</b> Flutter, Dart, Laravel, NodeJS, ExpressJS, MySQL, MongoDB.</li>
+												<li><b>Project Management Tools:</b> Git for version control and Jira/Trello for SCRUM monitoring.</li>
+											</ul>
+										</p>
+								  	</div>
+								</div>						  
+							</li>
+
+							<li id='fader' class="event" data-date="May 2020 - Oct. 2020">
+								<div class="member-infos">
+									<h1 class='member-title'>Full Stack and DevOps Intern</h1>
+									<h2 class="member-location with_logo">
+										<img src="img/work_experience/infraplus.png" />
+										 Infraplus
+										</h2>
+							
+									<div class="member-parameters">
+										<p>
+											In a few words, what I acquired from the experience:<br/>
+											I learnt about how to conduct a project, how to plan your tasks, how to communicate useful information to your team and many technical tools.
+											<hr/>
+											Created a Web application where companies can post their internship opportunities so that students can apply:
+											<ul>
+												<li><b>Used Technologies:</b> Angular, NodeJS, ExpressJS, PostgreSQL, Docker, Gitlab CI/CD and Linux.</li>
+												<li><b>Project Management Tools:</b> Git for version control and Jira for SCRUM monitoring.</li>
+											</ul>
+										</p>
+									</div>
+
+								</div>
+							</li>
+
+							<li class="event" data-date="Nov. 2020 - May 2021">
+								<div class="member-infos">
+									<h1 class='member-title'>Part-time Full Stack Developer and DevOps Engineer</h1>
+									<h2 class="member-location with_logo">
+										<img src="img/work_experience/infraplus.png" />
+										 Infraplus
+									</h2>
+							
+									<div class="member-parameters">
+										<p>
+											In a few words, what I acquired from the experience:<br/>
+											I learnt about how to synchronize work with your team, how important a good Software Design is and all about the Microservices Architecture.
+											<hr/>
+											Migrated the internship website to a Microservices Architecture:
+											<ul>
+												<li><b>Used Technologies:</b> Angular, NodeJS, ExpressJS, PostgreSQL, Docker, Gitlab CI/CD, Nginx webserver, Kong Gateway and Linux.</li>
+												<li><b>Project Management Tools:</b> Git for version control and Jira for SCRUM monitoring.</li>
+											</ul>
+										</p>
+									</div>	
+
+								</div>
+							</li>						  
+							  
+							<li class="event" data-date="June 2021 - Sep. 2021">
+								<div class="member-infos">
+									<h1 class='member-title'>Data Science Intern</h1>
+									<h2 class="member-location with_logo">
+										<img src="img/work_experience/expensya.png" />
+										 Expensya
+									</h2>
+							
+									<div class="member-parameters">
+										<p>
+											In a few words, what I acquired from the experience:<br/>
+											I learnt about better communicating ideas/issues, working as a team and product life cycle. On a more technical level, I got acquainted with Testing and meeting the Quality Criteria.
+											<hr/>
+											Worked on a new feature for the Expensya website, allowing users to Fast Scan their Vehicle Registration Documents to automatically create new Vehicles and fill them with the useful information from the document. I also had to write the necessary Tests for my code both to ensure it's working as intended and to check the Code Coverage:
+											<ul>
+												<li><b>Used Technologies:</b> .NET & C# using Visual Studio, SQL Database, AngularJS.</li>
+												<li><b>Project Management Tools:</b> Git for version control along with Azure Boards for monitoring, submitting Pull Requests and reviewing, and SonarQube for quality assurance.</li>
+											</ul>
+										</p>
+									</div>
+
+								</div>	
+							</li>						  
+							</ul>
+						</div>						
+					</div>
+				</div>	
+			</div>
+			<!-- /Work Experience -->
+
+			<div class="webresume_tm_portfolio_titles"></div>
+			<!-- PORTFOLIO & NEWS combined -->
+			<div id="portfolio" class="webresume_tm_section">
+				<div class="container">
+					<div class="webresume_tm_portfolio webresume_tm_news">
+						<div class="webresume_tm_title">
+							<div class="title_flex">
+								<div class="left">
+									<span>Portfolio</span>
+									<h3>My Work</h3>
+								</div>
+								<div class="portfolio_filter">
+									<ul>
+										<li><a href="#" class="current" data-filter="*">All</a></li>
+										<li><a href="#" data-filter=".data_science">Data Science</a></li>
+										<li><a href="#" data-filter=".devops">DevOps</a></li>
+										<li><a href="#" data-filter=".gamedev">Game Dev</a></li>
+										<li><a href="#" data-filter=".webdev">Web Dev</a></li>
+										<li><a href="#" data-filter=".security">Security</a></li>
+										<li><a href="#" data-filter=".mobiledev">Mobile Dev</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="list_wrapper">
+							<ul class="portfolio_list gallery_zoom">
+								<li class="data_science webdev">
+									<div class="list_inner inner">
+										<div class="image entry webresume_tm_portfolio_animation_wrap" data-title="Student Internship Website" data-category="Web & DevOps">
+											<img src="img/thumbs/4-3.jpg" alt="" />
+											<div class="main" data-img-url="img/portfolio/web/student_internship_website/1.png"></div>
+											<a class="webresume_tm_full_link" href="#"></a>
+										</div>
+										<div class="details">
+											<div class="extra">
+												<div class="short">
+													<p class="date">Internship INFRAPLUS <span>May 2020 - May 2021</span></p>
+												</div>
+											</div>
+											<h3 class="title"><a href="#">Website for Student Internships </a></h3>
+											<div class="webresume_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p class="bigger">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+												<p>Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+												<p>Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+												<div class="quotebox">
+													<div class="icon">
+														<img class="svg" src="img/svg/quote.svg" alt="" />
+													</div>
+													<p>Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+												</div>
+												<p>Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+												<p>The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+											</div>
+											<div class="news_share">
+												<span>Share:</span>
+												<ul>
+													<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"  alt="" /></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="webdev devops">
+									<div class="list_inner inner">
+										<div class="image entry webresume_tm_portfolio_animation_wrap" data-title="Student Internship Website" data-category="Web & DevOps">
+											<img src="img/thumbs/4-3.jpg" alt="" />
+											<div class="main" data-img-url="img/portfolio/data/expensya_vehicles/1.png"></div>
+											<a class="webresume_tm_full_link" href="#"></a>
+										</div>
+										<div class="details">
+											<div class="extra">
+												<div class="short">
+													<p class="date">Internship EXPENSYA <span>June 2021 - Sep 2021</span></p>
+												</div>
+											</div>
+											<h3 class="title"><a href="#"> </a></h3>
+											<div class="webresume_tm_read_more">
+												<a href="#"><span>Read More</span></a>
+											</div>
+										</div>
+										<div class="main_content">
+											<div class="descriptions">
+												<p class="bigger">Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.</p>
+												<p>Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.</p>
+												<p>Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.</p>
+												<div class="quotebox">
+													<div class="icon">
+														<img class="svg" src="img/svg/quote.svg" alt="" />
+													</div>
+													<p>Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.</p>
+												</div>
+												<p>Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.</p>
+												<p>The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.</p>
+											</div>
+											<div class="news_share">
+												<span>Share:</span>
+												<ul>
+													<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" /></a></li>
+													<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"  alt="" /></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<!-- /PORTFOLIO & NEWS combined -->
+
+			<!-- CONTACT -->
+			<div id="contact" class="webresume_tm_section">
+				<div class="container">
+					<div class="webresume_tm_contact">
+						<div class="webresume_tm_title">
+							<div class="title_flex">
+								<div class="left">
+									<span>Contact</span>
+									<h3>Get in Touch</h3>
+								</div>
+							</div>
+						</div>
+						<div class="fields">
+							<form action="https://formsubmit.co/5b972b6920ee59a3a487747cfae2befb" method="post" target="_blank" class="contact_form" id="contact_form" autocomplete="off">
+								<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
+								<div class="empty_notice"><span>Please Fill Required Fields</span></div>
+								<div class="first">
+									<ul>
+										<li>
+											<input name="name" id="name" type="text" placeholder="Name">
+										</li>
+										<li>
+											<input name="email" id="email" type="email" placeholder="Email">
+										</li>
+									</ul>
+								</div>
+								<div class="last">
+									<textarea name="message" id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="webresume_tm_button" data-position="left">
+									<button type="submit" id="send_message">
+										<span>Send Message</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<!-- /CONTACT -->
+		
+		</div>
+	</div>
+	<!-- /RIGHTPART -->
+		
+	<!-- CURSOR -->
+	<div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+	<!-- /CURSOR -->
+	
+</div>
+<!-- / WRAPPER ALL -->
+	
+<!-- SCRIPTS -->
+<script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/init.js"></script>
+<script src="js/modeswitch.js"></script>
+<script src="js/cuphead.js"></script>
+<!-- /SCRIPTS -->
+
+</body>
 
 </html>
