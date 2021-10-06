@@ -1324,6 +1324,7 @@ h6 { font-size: 16px; }
 .webresume_tm_news ul li .details .title{
 	margin-bottom: 10px;
 	line-height: 1.4;
+	height: 3em !important;
 }
 .webresume_tm_news ul li .details .title a{
 	text-decoration: none;
@@ -1701,6 +1702,17 @@ body.modal{
 .webresume_tm_modalbox .main_content .descriptions p{
 	margin-bottom: 22px;
 }
+.webresume_tm_modalbox .main_content .descriptions .tools_used ul{
+	list-style-type: none;
+}
+.webresume_tm_modalbox .main_content .descriptions .tools_used li{
+	float: left;
+	margin-left: 2em;
+	text-align: center;
+}
+.webresume_tm_modalbox .main_content .descriptions .tools_used .item img{
+	height: 5em !important;
+}
 .webresume_tm_modalbox .main_content .quotebox{
 	width: 100%;
 	height: auto;
@@ -1725,6 +1737,25 @@ body.modal{
 	width: 40px;
 	height: 40px;
 	color: #000;
+}
+.webresume_tm_modalbox .main_content .more_pics ul,
+.webresume_tm_modalbox .main_content .assets_game ul{
+	list-style-type: none;
+}
+.webresume_tm_modalbox .main_content .more_pics li{
+	text-align: center;
+}
+.webresume_tm_modalbox .main_content .assets_game li{
+	display: inline-block;
+}
+.webresume_tm_modalbox .main_content .more_pics .item img{
+	height: auto !important;
+	margin-bottom: 10px;
+}
+.webresume_tm_modalbox .main_content .assets_game .item img{
+	height: 64px !important;
+	margin-bottom: 10px;
+	width: 64px !important;
 }
 .webresume_tm_modalbox .news_share{
 	width: 100%;
@@ -2134,6 +2165,12 @@ body.modal{
 	.webresume_tm_modalbox .box_inner{width: 300px;}
 	.webresume_tm_modalbox_about .box_inner{width: 300px;}
 	.webresume_tm_modalbox .description_wrap{padding: 20px;}
+}
+@media (max-width: 360px) {
+	.close {
+		left: 90% !important;
+		top: -2.5em !important;
+	}
 }
 
 /*---------------------------------------------------*/

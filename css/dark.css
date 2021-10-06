@@ -228,6 +228,11 @@ body.dark .webresume_tm_modalbox .main_details .detailbox span:last-child{
 body.dark .webresume_tm_modalbox .details .title{
 	color: #000;
 }
+body.dark .webresume_tm_modalbox .main_content h1,
+body.dark .webresume_tm_modalbox .main_content h2,
+body.dark .webresume_tm_modalbox .main_content h3{
+	color: #000;
+}
 body.dark .webresume_tm_modalbox .main_content .descriptions p{
 	color: #767676;
 }
