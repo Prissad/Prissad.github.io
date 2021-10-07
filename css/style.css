@@ -20,6 +20,10 @@
 /*	01) webresume BASE
 /*---------------------------------------------------*/
 
+.pdf_resume {
+	text-align: center !important;
+	margin-bottom: 30px !important;
+}
 html {
 	overflow-x: hidden;
 	padding: 0px;
@@ -470,8 +474,7 @@ h6 { font-size: 16px; }
 	font-family: "Montserrat";
 	font-style: italic;
 	font-weight: 500;
-	max-width: 450px;
-	margin-bottom: 30px;
+	max-width: 450px;	
 }
 .webresume_tm_home .social{
 	width: 100%;
